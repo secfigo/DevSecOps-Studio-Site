@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Getting started - DevSecOps Studio</title>
+    <meta name="generator" content="Hugo 0.36" />
+
+    
+    <meta name="description" content="Virtual environment for learning DevSecOps">
+    
+    <link rel="canonical" href="http://dso-studio.teachera.io/getting-started/">
+    
+    <meta name="author" content="Mohammed A.Imran">
+    
+
+    <meta property="og:url" content="http://dso-studio.teachera.io/getting-started/">
+    <meta property="og:title" content="DevSecOps Studio">
+    <meta property="og:image" content="http://dso-studio.teachera.io/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="DevSecOps Studio">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://dso-studio.teachera.io/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://dso-studio.teachera.io/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('http://dso-studio.teachera.io/fonts/icon.eot');
+        src: url('http://dso-studio.teachera.io/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('http://dso-studio.teachera.io/fonts/icon.woff')
+               format('woff'),
+             url('http://dso-studio.teachera.io/fonts/icon.ttf')
+               format('truetype'),
+             url('http://dso-studio.teachera.io/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://dso-studio.teachera.io/stylesheets/application.css">
+    <link rel="stylesheet" href="http://dso-studio.teachera.io/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://dso-studio.teachera.io/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://dso-studio.teachera.io/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://dso-studio.teachera.io/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-indigo palette-accent-red">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        DevSecOps Studio
+        
+        |  Getting started
+        
+      </div>
+    </div>
+
+    
+    <div class="button button-twitter" role="button" aria-label="Twitter">
+       <a href="https://twitter.com/secfigo" title="@secfigo on Twitter" target="_blank" class="toggle-button icon icon-twitter"></a>
+    </div>
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/raseyon" title="@raseyon on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/teacheraio/DevSecOps-Studio" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://dso-studio.teachera.io/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>DevSecOps Studio <span class="version">1.0.0</span></strong>
+        
+          <br>
+          teacheraio/DevSecOps-Studio
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/teacheraio/DevSecOps-Studio/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/teacheraio/DevSecOps-Studio/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="DevSecOps Studio" href="http://dso-studio.teachera.io/">
+	
+	DevSecOps Studio
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a class="current" title="Getting started" href="http://dso-studio.teachera.io/getting-started/">
+	
+	Getting started
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Tools Used" href="http://dso-studio.teachera.io/tools/">
+	
+	Tools Used
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Roadmap &amp; Changelog" href="http://dso-studio.teachera.io/roadmap/">
+	
+	Roadmap &amp; Changelog
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="License" href="http://dso-studio.teachera.io/license/">
+	
+	License
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+          <li>
+            <a href="https://twitter.com/secfigo" target="_blank" title="@secfigo on Twitter">
+              @secfigo on Twitter
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/raseyon" target="_blank" title="@raseyon on GitHub">
+              @raseyon on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:info%20[at]%20teachera.io" title="Email of info [at] teachera.io">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Getting started </h1>
+
+			
+
+<h2 id="dependencies">Dependencies</h2>
+
+<p>DevSecOps Studio uses <code>vagrant</code>, <code>virtualbox</code> and <code>ansible</code> to setup the lab environment. You can visit the vendor&rsquo;s website to download the above software for on Windows/Linux/macOS.</p>
+
+<p>DevSecOps Studio simulates the environment presented below.</p>
+
+<p><img src="http://dso-studio.teachera.io/images/appsec-pipeline.png" alt="Appsec Pipeline" /></p>
+
+<h3 id="software">Software</h3>
+
+<ul>
+<li><a href="https://www.vagrantup.com/downloads.html">Vagrant</a></li>
+<li><a href="https://www.virtualbox.org/wiki/Downloads">Virtualbox</a></li>
+<li><a href="http://docs.ansible.com/ansible/latest/intro_installation.html#installation">Ansible</a></li>
+</ul>
+
+<h3 id="hardware">Hardware</h3>
+
+<ul>
+<li>Atleast 4GB of RAM for the virtual machines.</li>
+<li>60GB of HDD Space.</li>
+<li>Intel i3 Processor or above.</li>
+</ul>
+
+<h2 id="macos-installation">MacOS Installation</h2>
+
+<p>Prerequisites can also be installed via homebrew on MAC OS X</p>
+
+<p><a href="http://brew.sh/">Homebrew</a>: Optional</p>
+
+<pre><code class="language-bash"> /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+
+</code></pre>
+
+<p><a href="https://www.vagrantup.com/downloads.html">Vagrant</a></p>
+
+<pre><code class="language-bash">brew cask install vagrant
+</code></pre>
+
+<p><a href="https://www.virtualbox.org/wiki/Downloads">Virtualbox</a></p>
+
+<pre><code class="language-bash">brew cask install virtualbox
+</code></pre>
+
+<p><a href="http://docs.ansible.com/ansible/latest/intro_installation.html#installation">Ansible</a></p>
+
+<pre><code class="language-bash">brew install ansible
+</code></pre>
+
+<h2 id="linux-installation">Linux Installation</h2>
+
+<p>Install dependencies using apt-get</p>
+
+<p><a href="https://www.virtualbox.org/wiki/Downloads">Virtualbox</a></p>
+
+<pre><code class="language-bash">sudo sh -c 'echo &quot;deb http://download.virtualbox.org/virtualbox/debian xenial contrib&quot; &gt;&gt; /etc/apt/sources.list.d/virtualbox.list'
+
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+
+sudo apt update
+
+sudo apt install virtualbox
+</code></pre>
+
+<p><a href="https://www.vagrantup.com/downloads.html">Vagrant</a></p>
+
+<pre><code class="language-bash">sudo apt-get install vagrant python2 python2-pip
+</code></pre>
+
+<p><a href="http://docs.ansible.com/ansible/latest/intro_installation.html#installation">Ansible</a></p>
+
+<pre><code class="language-bash">pip install ansible
+</code></pre>
+
+<h2 id="windows-installation">Windows Installation</h2>
+
+<p>Alternatively, Installation can be done using <a href="https://chocolatey.org/install">chocolatey</a> by opening up command prompt  and using the following command.</p>
+
+<pre><code class="language-bash">@&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &quot;iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))&quot; &amp;&amp; SET &quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&quot;
+</code></pre>
+
+<p>Install dependencies using choco</p>
+
+<pre><code class="language-bash">choco install vagrant virtualbox git
+</code></pre>
+
+<p>Install ansible via pip</p>
+
+<pre><code class="language-bash">choco install python --version 2.7.6
+pip install ansible
+</code></pre>
+
+<h2 id="installation">Installation</h2>
+
+<ol>
+<li><p>Clone this repo or download the zip</p>
+
+<pre><code class="language-bash">$ git clone https://github.com/teacheraio/DevSecOps-Studio.git
+</code></pre></li>
+
+<li><p>CD into the directory and check what boxes are available.</p>
+
+<pre><code class="language-bash">$ cd DevSecOps-Studio &amp;&amp; vagrant status
+</code></pre></li>
+
+<li><p>Download requirement ansible dependencies.</p>
+
+<pre><code class="language-bash">$ ansible-galaxy install -r requirements.yml
+</code></pre></li>
+</ol>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>If you wish to make any changes to default setup, please edit <code>machines.yml</code> . Meanwhile, go grab some coffee to enjoy.</p>
+
+<pre><code class="language-bash"> vagrant up
+</code></pre>
+
+<p>You can see how it all fits in DevSecOps pipeline by reading out <a href="https://github.com/teacheraio/DevSecOps-Studio/wiki">wiki</a></p>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the MIT license
+				
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://dso-studio.teachera.io/tools/" title="Tools Used">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Tools Used
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/dso-studio.teachera.io\/';
+      var repo_id  = 'teacheraio\/DevSecOps-Studio';
+    
+    </script>
+
+    <script src="http://dso-studio.teachera.io/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
