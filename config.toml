@@ -1,4 +1,4 @@
-baseurl = "http://dso-studio.teachera.io/"
+baseurl = "https://dso-studio.teachera.io/"
 languageCode = "en-us"
 title = "DevSecOps Studio"
 theme = "hugo-material-docs"
